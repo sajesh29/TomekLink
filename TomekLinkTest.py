@@ -19,7 +19,7 @@ def main():
     tomeklinks = Tomeklink.detectTomekLinks(X,y)
     
     # Remove the TomekLinks from the data
-    X,y = Tomeklink.removeTomekLinks(tomeklinks,X,y)
+    X,y = Tomeklink.removeTomekLinks(X,y,tomeklinks)
      
     # Plat the data again with the TomekLinks removed
     colors = np.array([x for x in 'bgrcmykbgrcmykbgrcmykbgrcmyk'])
